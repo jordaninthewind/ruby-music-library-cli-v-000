@@ -89,7 +89,7 @@ attr_reader :path
   def play_song
     # self.list_songs
     puts "Which song number would you like to play?"
-    song_number = gets.chomp
+    song_number = gets.chomp.to_i
     binding.pry
 
   end
