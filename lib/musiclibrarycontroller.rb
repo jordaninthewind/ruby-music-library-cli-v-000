@@ -19,7 +19,7 @@ attr_reader :path
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
     choice = gets.chomp
-    
+
     case choice
     when 'exit'
       exit
