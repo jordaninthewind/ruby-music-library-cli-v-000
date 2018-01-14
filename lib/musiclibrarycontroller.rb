@@ -17,6 +17,7 @@ attr_reader :path
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
     gets.chomp
+    self.call
   end
 
 end
