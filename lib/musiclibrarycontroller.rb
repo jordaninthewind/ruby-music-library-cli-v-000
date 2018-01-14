@@ -66,7 +66,7 @@ attr_reader :path
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     artist = gets.chomp
-    x = Artist.find_by_name(artist).songs.sort_by {|el| el.name}
+    x = Artist.find_by_name(artist)#.songs.sort_by {|el| el.name}
     binding.pry
   end
 
