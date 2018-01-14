@@ -11,4 +11,7 @@ attr_reader :path
     Dir.entries(@path).select{|i| i.split(".")[-1] == "mp3"}
   end
 
+  def import
+
+  end
 end
