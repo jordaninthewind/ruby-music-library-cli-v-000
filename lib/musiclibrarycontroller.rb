@@ -19,10 +19,13 @@ attr_reader :path
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
     choice = gets.chomp
+    if choice != 'exit'
+      self.call
+    end
 
-    case choice
-    when 'exit'
-      exit
+    # case choice
+    # when 'exit'
+    #   exit
     # when 'list songs'
     #   Song.all
     # when 'list artists'
@@ -32,9 +35,9 @@ attr_reader :path
     # when 'list artist'
     #   artist = gets.chomp
     #   Artist.find_by_name(artist)
-    else
-      self.call
-    end
+    # else
+    #   self.call
+    # end
   end
 
   def list_songs
