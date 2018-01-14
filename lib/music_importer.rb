@@ -8,7 +8,6 @@ attr_reader :path
   end
 
   def files
-    # binding.pry
     Dir.entries(@path).select{|i| i.split(".")[-1] == "mp3"}
   end
 
