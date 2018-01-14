@@ -1,3 +1,5 @@
+require 'pry'
+
 class MusicLibraryController
 attr_reader :path
 
