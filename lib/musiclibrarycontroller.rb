@@ -81,7 +81,7 @@ attr_reader :path
     if x != nil
       y = x.songs.sort_by {|el| el.name}.each_with_index do |el, i|
         binding.pry
-        puts "#{i + 1}. #{el.name} - #{el.genre.name}"
+        puts "#{i + 1}. #{el.artist.name} - #{el.name}"
       end
     end
   end
