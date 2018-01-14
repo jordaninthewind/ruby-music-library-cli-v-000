@@ -70,9 +70,10 @@ attr_reader :path
     if x == nil
       puts "No artist found."
     else
-      binding.pry
       organized_songs = x.songs.sort_by {|el| el.name}
-    end
+      binding.pry
+      puts ""
+    ends
   end
 
 end
