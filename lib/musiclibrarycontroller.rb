@@ -40,8 +40,8 @@ attr_reader :path
   end
 
   def list_songs
-    # binding.pry
     x = Song.all.sort_by { |i| i.name }
+    binding.pry
     x.each_with_index do |el, i|
       puts "#{i+1}. #{el.artist.name} - #{el.name} - #{el.genre.name}"
     end
