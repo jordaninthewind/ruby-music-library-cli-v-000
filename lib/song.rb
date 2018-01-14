@@ -54,7 +54,8 @@ class Song
 
   def self.new_from_filename(filename)
     name, title = filename.split(" - ")
+    binding.pry
     self.find_or_create_by_name(title)
-    
+    binding.pry
   end
 end
