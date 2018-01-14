@@ -67,8 +67,8 @@ attr_reader :path
     puts "Please enter the name of an artist:"
     artist = gets.chomp
     x = Artist.find_by_name(artist)
-    organized_songs = x.songs.sort_by {|el| el.name}
     binding.pry
+    organized_songs = x.songs.sort_by {|el| el.name}
   end
 
 end
