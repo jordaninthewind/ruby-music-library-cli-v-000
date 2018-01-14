@@ -41,7 +41,7 @@ attr_reader :path
 
   def list_songs
     binding.pry
-    Song.all.sort_by { |i| i.name }
+    x = Song.all.sort_by { |i| i.name }
   end
 
 end
