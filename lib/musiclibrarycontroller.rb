@@ -68,9 +68,9 @@ attr_reader :path
     artist = gets.chomp
     x = Artist.find_by_name(artist)
     if x != nil
-      songs = x.songs.sort_by {|el| el.name}
-      binding.pry
-      puts ""
+      x.songs.sort_by {|el| el.name}.each_with_index do |el, i|
+        puts "#{i + 1}. #{el.name} - #{el.genre.name}"
+      end
     end
   end
 
