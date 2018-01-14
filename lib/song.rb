@@ -54,8 +54,9 @@ class Song
 
   def self.new_from_filename(filename)
     name, title = filename.split(" - ")
-    binding.pry
+    # it makes a new song
     self.find_or_create_by_name(title)
-    binding.pry
+    # it associates the song with an artist
+    
   end
 end
