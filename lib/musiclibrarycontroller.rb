@@ -50,7 +50,7 @@ attr_reader :path
   def list_artists
     x = Artist.all.sort_by { |i| i.name }
     x.each_with_index do |el, i|
-      binding.pry
+      # binding.pry
       puts "#{i + 1}. #{el.name}"
     end
   end
