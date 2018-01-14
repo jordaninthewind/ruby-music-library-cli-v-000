@@ -34,9 +34,9 @@ attr_reader :path
     # when 'list artist'
     #   artist = gets.chomp
     #   Artist.find_by_name(artist)
-    # else
-    #   self.call
-    # end
+    else
+      self.call
+    end
   end
 
   def list_songs
