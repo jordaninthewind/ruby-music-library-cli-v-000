@@ -59,8 +59,7 @@ class Song
     x = self.find_or_create_by_name(title)
     y = Artist.find_or_create_by_name(name)
     z = Genre.find_or_create_by_name(genre)
-    x.artist = y
-    x.genre = z
+    x.artist = y.genre = z
     x
     # it associates the song with an artist
   end
