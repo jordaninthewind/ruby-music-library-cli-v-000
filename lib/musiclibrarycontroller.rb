@@ -90,7 +90,9 @@ attr_reader :path
     # self.list_songs
     puts "Which song number would you like to play?"
     song_number = gets.chomp.to_i
-    binding.pry
+    if song_number.class == Integer
+        binding.pry
+    end
 
   end
 end
