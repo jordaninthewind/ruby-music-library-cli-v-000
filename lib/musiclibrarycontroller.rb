@@ -55,4 +55,12 @@ attr_reader :path
     end
   end
 
+  def list_genres
+    x = Genre.all.sort_by { |i| i.name }
+    x.each_with_index do |el, i|
+      # binding.pry
+      puts "#{i + 1}. #{el.name}"
+    end
+  end
+
 end
