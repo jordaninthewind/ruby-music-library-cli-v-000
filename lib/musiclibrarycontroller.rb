@@ -73,7 +73,7 @@ attr_reader :path
       organized_songs = x.songs.sort_by {|el| el.name}
       binding.pry
       puts ""
-    ends
+    end
   end
 
 end
