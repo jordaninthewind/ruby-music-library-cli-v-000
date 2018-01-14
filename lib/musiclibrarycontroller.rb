@@ -89,5 +89,5 @@ attr_reader :path
   def play_song
     self.list_songs
     puts "Which song number would you like to play?"
-
+  end
 end
