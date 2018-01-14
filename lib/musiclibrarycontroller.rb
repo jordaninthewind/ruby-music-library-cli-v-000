@@ -75,7 +75,7 @@ attr_reader :path
   end
 
   def list_songs_by_genre
-    puts "Please enter the name of an artist:"
+    puts "Please enter the name of a genre:"
     artist = gets.chomp
     x = Artist.find_by_name(artist)
     if x != nil
