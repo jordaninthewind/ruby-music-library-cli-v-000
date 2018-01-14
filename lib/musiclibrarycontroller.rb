@@ -19,9 +19,9 @@ attr_reader :path
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
     choice = gets.chomp
+
     if choice != 'exit'
       case choice
-
         when 'list songs'
           self.list_songs
         when 'list artists'
