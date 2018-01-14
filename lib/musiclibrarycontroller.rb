@@ -63,4 +63,8 @@ attr_reader :path
     end
   end
 
+  def list_songs_by_artist
+
+  end
+
 end
