@@ -53,12 +53,13 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    name, title = filename.split(" - ")
+    name, title, genre = filename.split(" - ")
     # it makes a new song
     x = self.find_or_create_by_name(title)
     y = Artist.find_or_create_by_name(name)
-    # binding.pry
+    z = Genre.find_or_create_by_name(genre)
     x.artist = y
+    x.genre = z
     x
     # it associates the song with an artist
   end
