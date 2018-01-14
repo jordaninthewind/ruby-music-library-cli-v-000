@@ -57,7 +57,7 @@ class Song
     # it makes a new song
     x = self.find_or_create_by_name(title)
     y = Artist.find_or_create_by_name(name)
-    binding.pry
+    # binding.pry
     x.artist = y
     # it associates the song with an artist
   end
