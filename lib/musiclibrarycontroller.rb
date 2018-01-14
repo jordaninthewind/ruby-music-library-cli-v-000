@@ -37,4 +37,8 @@ attr_reader :path
     # end
   end
 
+  def list_songs
+
+  end
+
 end
