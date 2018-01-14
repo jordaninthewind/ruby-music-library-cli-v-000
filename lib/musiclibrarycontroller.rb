@@ -74,4 +74,15 @@ attr_reader :path
     end
   end
 
+  def list_songs_by_genre
+    puts "Please enter the name of an artist:"
+    artist = gets.chomp
+    x = Artist.find_by_name(artist)
+    if x != nil
+      x.songs.sort_by {|el| el.name}.each_with_index do |el, i|
+        puts "#{i + 1}. #{el.name} - #{el.genre.name}"
+      end
+    end
+  end
+
 end
