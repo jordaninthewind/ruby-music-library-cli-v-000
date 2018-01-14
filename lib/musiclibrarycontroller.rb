@@ -91,7 +91,7 @@ attr_reader :path
     puts "Which song number would you like to play?"
     song_number = gets.chomp.to_i
     if song_number > 0
-        binding.pry
+        # binding.pry
         x = Song.all.sort_by { |i| i.name }.uniq
         # binding.pry
         x.each_with_index do |el, i|
