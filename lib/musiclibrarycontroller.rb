@@ -40,6 +40,7 @@ attr_reader :path
   end
 
   def list_songs
+    binding.pry
     Song.all.sort_by { |i| i.name }
   end
 
