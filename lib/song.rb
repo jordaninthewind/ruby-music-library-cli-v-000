@@ -59,6 +59,7 @@ class Song
     y = Artist.find_or_create_by_name(name)
     # binding.pry
     x.artist = y
+    x
     # it associates the song with an artist
   end
 end
