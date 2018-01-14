@@ -96,7 +96,7 @@ attr_reader :path
         # binding.pry
         x.each_with_index do |el, i|
           if i + 1 == song_number
-            puts "#{i + 1}. #{el.artist.name} - #{el.name} - #{el.genre.name}"
+            puts "Playing #{el.name} by #{el.artist.name}"
           end
         end
     end
