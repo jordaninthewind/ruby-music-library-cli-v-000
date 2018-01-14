@@ -92,6 +92,13 @@ attr_reader :path
     song_number = gets.chomp.to_i
     if song_number > 0
         binding.pry
+        x = Song.all.sort_by { |i| i.name }.uniq
+        # binding.pry
+        x.each_with_index do |el, i|
+          if i + 1 == song_number
+            puts "#{i + 1}. #{el.artist.name} - #{el.name} - #{el.genre.name}"
+          end
+        end
     end
 
   end
