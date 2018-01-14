@@ -54,14 +54,10 @@ class Song
 
   def self.new_from_filename(filename)
     name, title, genre = filename.split(" - ")
-    # it makes a new song
     genre = genre.split('.')[0]
     new_song = self.find_or_create_by_name(title)
     new_song.artist = Artist.find_or_create_by_name(name)
     new_song.genre = Genre.find_or_create_by_name(genre)
-    # new_song.artist = artist_object
-    # new_song.genre = genre_object
     new_song
-    # it associates the song with an artist
   end
 end
