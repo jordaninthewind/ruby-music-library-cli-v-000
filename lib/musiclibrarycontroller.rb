@@ -20,24 +20,24 @@ attr_reader :path
     puts "What would you like to do?"
     choice = gets.chomp
     if choice != 'exit'
-      self.call
-    end
+      case choice
 
-    # case choice
-    # when 'exit'
-    #   exit
-    # when 'list songs'
-    #   Song.all
-    # when 'list artists'
-    #   Artist.all
-    # when 'list genres'
-    #   Genre.all
-    # when 'list artist'
-    #   artist = gets.chomp
-    #   Artist.find_by_name(artist)
-    # else
-    #   self.call
-    # end
+        when 'list songs'
+          self.list_songs
+        when 'list artists'
+          self.list_artists
+        when 'list genres'
+          self.list_genres
+        when 'list artist'
+          self.list_songs_by_artist
+        when 'list genre'
+          self.list_songs_by_genre
+        when 'play song'
+          self.play_song
+        else
+          self.call
+        end
+    end
   end
 
   def list_songs
