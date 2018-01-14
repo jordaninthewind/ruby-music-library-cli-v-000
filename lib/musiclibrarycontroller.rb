@@ -64,7 +64,8 @@ attr_reader :path
   end
 
   def list_songs_by_artist
-
+    x = Artist
+    binding.pry
   end
 
 end
