@@ -38,7 +38,7 @@ attr_reader :path
   end
 
   def list_songs
-
+    Song.all.sort_by { |i| i.name }
   end
 
 end
