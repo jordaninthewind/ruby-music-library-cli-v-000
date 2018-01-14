@@ -16,8 +16,10 @@ attr_reader :path
     puts "To play a song, enter 'play song'."
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
-    gets.chomp
-    self.call
+    x = gets.chomp
+    if x != 'exit'
+      self.call
+    end
   end
 
 end
