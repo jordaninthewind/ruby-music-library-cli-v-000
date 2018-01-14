@@ -12,6 +12,8 @@ attr_reader :path
   end
 
   def import
-
+    self.files.each do |el|
+      Song.create_from_filename(el)
+    end
   end
 end
