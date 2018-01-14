@@ -82,7 +82,7 @@ attr_reader :path
     #   x.songs.sort_by {|el| el.name}.each_with_index do |el, i|
     #     puts "#{i + 1}. #{el.name} - #{el.genre.name}"
     #   end
-    end
+    # end
   end
 
 end
